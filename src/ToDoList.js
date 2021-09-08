@@ -11,7 +11,7 @@ const ToDoList = ({toDoList, handleToggle, filterTasks}) => {
       {toDoList.map((todo) => {
         return <ToDo key={todo.id} todo={todo} handleToggle={handleToggle} />
       })}
-      <button onClick={handleClick}>Clear Completed Tasks</button>
+      <button className="mt-3" onClick={handleClick}>Clear Completed Tasks</button>
     </div>
   )
 }
