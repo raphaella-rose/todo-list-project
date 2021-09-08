@@ -3,6 +3,7 @@ import data from "./data.json";
 import Header from "./Header";
 import ToDoForm from "./ToDoForm";
 import ToDoList from "./ToDoList";
+import Footer from "./Footer";
 
 import './App.css';
 
@@ -30,6 +31,7 @@ setToDoList(copy);
     <Header />
     <ToDoForm addTask={addTask} />
     <ToDoList filterTasks={filterTasks} handleToggle={handleToggle} toDoList={toDoList} />
+    <Footer />
     </div>
   );
 }

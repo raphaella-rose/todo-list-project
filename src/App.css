@@ -11,3 +11,12 @@ h1 {
 .item:hover {
   cursor: pointer;
 }
+
+.signature {
+  font-weight: 400;
+  margin-top: 75px;
+}
+.link {
+  color: blueviolet;
+  text-decoration: none;
+}
