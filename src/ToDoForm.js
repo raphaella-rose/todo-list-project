@@ -12,10 +12,10 @@ addTask(userInput);
 setUserInput("");
 }
 return(
-  <div className="mt-5 mb-4">
+  <div className="mt-4 mb-4">
   <form onSubmit={handleSubmit}>
-  <input value={userInput} type="text" placeholder="Enter a task..." onChange={handleChange} />
-  <button>Add</button>
+  <input className="search-bar" value={userInput} type="text" placeholder="Enter a task..." onChange={handleChange} />
+  <button className="button">Add</button>
   </form>
   </div>
 )

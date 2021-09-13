@@ -29,8 +29,10 @@ setToDoList(copy);
   return (
     <div className="App">
     <Header />
+    <div className="container">
     <ToDoForm addTask={addTask} />
     <ToDoList filterTasks={filterTasks} handleToggle={handleToggle} toDoList={toDoList} />
+    </div>
     <Footer />
     </div>
   );

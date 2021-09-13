@@ -1,22 +1,116 @@
-.App {
+body {
+  background: #defcf9;
   text-align: center;
 }
 h1 {
-  font-size: 50px;
-  margin-top: 15px;
+  color: #cca8e9;
+  font-family: "Urbanist", sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.container {
+  border: 5px solid #cca8e9;
+  border-radius: 11px;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+  padding: 20px 15px 35px;
+  text-align: center;
+  max-width: 45%;
+}
+.search-bar {
+  background: #cadefc;
+  border: 1px solid #cadefc;
+  border-radius: 8px;
+  color: #cca8e9;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  outline: none;
+  margin-right: 5px;
+}
+.search-bar::placeholder {
+  color: #cca8e9;
+}
+.button {
+  background: #cadefc;
+  border: 1px solid #cadefc;
+  border-radius: 8px;
+  color: #cca8e9;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  outline: none;
+  transition: ease-in-out 200ms;
+}
+.button:hover {
+  background: #cca8e9;
+  border: 1px solid #cca8e9;
+  color: #cadefc;
 }
 .strike {
   text-decoration: line-through;
 }
+.item {
+  color: #c3bef0;
+  font-family: "Glory", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
 .item:hover {
   cursor: pointer;
 }
-
 .signature {
+  color: #c3bef0;
   font-weight: 400;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 .link {
-  color: blueviolet;
+  color: #cca8e9;
   text-decoration: none;
+}
+
+@media (max-width: 426px) {
+  h1 {
+    font-size: 50px;
+  }
+  .container {
+    padding: 10px 15px 35px;
+  }
+  .search-bar {
+    font-size: 13px;
+    margin-right: 3px;
+    width: 100px;
+  }
+  .button {
+    font-size: 13px;
+  }
+  .item {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 15px;
+    padding: 0 75px;
+  }
+}
+@media (max-width: 376px) {
+  h1 {
+    font-size: 50px;
+  }
+  .container {
+    padding: 10px 15px 35px;
+  }
+  .search-bar {
+    font-size: 11px;
+    margin-right: 2px;
+    width: 85px;
+  }
+  .button {
+    font-size: 11px;
+  }
+  .item {
+    font-size: 13px;
+  }
+  .signature {
+    font-size: 15px;
+    padding: 0 75px;
+  }
 }
